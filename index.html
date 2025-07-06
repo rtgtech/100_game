@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container" id="con1">
+        <h1>Number Guessing Game</h1>
+        <p><a href="ReadME.txt" target="_blank">How to Play?</a></p>
+        <ul>
+            <li id="up-lim"> </li>
+            <li id="low-lim"> </li>
+            <li id="tries"> </li>
+        </ul>
+
+
+        <div class="display-box">
+            <input id="message-box" readonly placeholder="Message box">
+            <input id="input-box" disabled placeholder="Input box">
+        </div>
+        <div class="btn-box">
+            <button id="btn-1" onclick="start()">Start</button>
+            <button id="btn-2" onclick="toggleSetting()">⚙️</button>
+        </div>
+    </div>
+    <div class="settings-container" id="scon1">
+        <h1>Upper Limit</h1>
+        <input id="up-lim-in" type="number"><br>
+        <h1>Lower Limit</h1>
+        <input id="low-lim-in" type="number"><br>
+        <h1>Tries</h1>
+        <input id="tries-in" type="number"><br>
+        <div class="setting-btn-box">
+            <div id="reset-btn">
+                <button onclick="resetSetting()">Reset Values</button><br>
+            </div>
+            <div id="btn-3">
+                <button onclick="toggleHome()"> &lt; back</button>
+                <button onclick="save()">Save Changes</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
