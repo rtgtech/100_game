@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container" id="main-window">
+        <h1 style="text-align: center;">100 GAME</h1>
+        <a href="README.txt" target="_blank">
+            <h2 style="padding-left: 4vw;">How to play?</h2>
+        </a>
+        <div id="main-btn-box">
+            <button onclick="compplay()">Play with AI 🤖</button><br>
+            <button onclick="frndplay()">Play with Friend</button><br>
+        </div>
+    </div>
+    <div class="container" id="comp">
+        <h1 style="text-align: center;">Play with AI 🤖</h1>
+        <h2 id="cscore">Score : </h2>
+        <div id="comp-box">
+            <input type="text" id="msg-box" readonly><br>
+            <input type="number" id="comp-ip" min="1" max="10" disabled><br>
+            <div id="comp-btn-box">
+                <button onclick="comp_start()" id="comp-start-btn">Start</button>
+                <button onclick="home()">Home</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="frnd">
+        <h1 style="text-align: center;">Play with Friend</h1>
+        <div id="name-box">
+            <h2>Player 1 : </h2>
+            <input type="text" id="player1">
+            <h2>Player 2 :</h2>
+            <input type="text" id="player2">
+            <div id="name-btn-box">
+                <button onclick="home()">Go back</button>
+                <button onclick="savename()">Continue</button>
+            </div>
+        </div>
+
+        <div id="frnd-box">
+            <h2 id="fscore">Score : </h2>
+            <h2 id="turn">Turn : </h2>
+            <div id="frnd-inner-box">
+                <input type="number" id="frnd-ip">
+                <div id="frnd-btn-box">
+                    <button onclick="start_fgame()" id="frnd-start-btn">Start</button>
+                    <button onclick="home()">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
